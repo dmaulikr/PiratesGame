@@ -14,6 +14,8 @@
 		EFA40A6C1B81E020009AB36F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA40A6B1B81E020009AB36F /* Images.xcassets */; };
 		EFA40A6F1B81E020009AB36F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA40A6D1B81E020009AB36F /* LaunchScreen.xib */; };
 		EFA40A7B1B81E020009AB36F /* Pirates_GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA40A7A1B81E020009AB36F /* Pirates_GameTests.m */; };
+		EFA40A871B82036E009AB36F /* CCTile.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA40A861B82036E009AB36F /* CCTile.m */; };
+		EFA40A8A1B820468009AB36F /* CCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA40A891B820468009AB36F /* CCFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		EFA40A741B81E020009AB36F /* Pirates GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pirates GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA40A791B81E020009AB36F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFA40A7A1B81E020009AB36F /* Pirates_GameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pirates_GameTests.m; sourceTree = "<group>"; };
+		EFA40A851B82036E009AB36F /* CCTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTile.h; sourceTree = "<group>"; };
+		EFA40A861B82036E009AB36F /* CCTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTile.m; sourceTree = "<group>"; };
+		EFA40A881B820468009AB36F /* CCFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFactory.h; sourceTree = "<group>"; };
+		EFA40A891B820468009AB36F /* CCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				EFA40A631B81E020009AB36F /* AppDelegate.m */,
 				EFA40A651B81E020009AB36F /* ViewController.h */,
 				EFA40A661B81E020009AB36F /* ViewController.m */,
+				EFA40A841B82033B009AB36F /* Model */,
 				EFA40A681B81E020009AB36F /* Main.storyboard */,
 				EFA40A6B1B81E020009AB36F /* Images.xcassets */,
 				EFA40A6D1B81E020009AB36F /* LaunchScreen.xib */,
@@ -117,6 +124,25 @@
 				EFA40A791B81E020009AB36F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFA40A841B82033B009AB36F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFA40A8B1B82047F009AB36F /* Factory */,
+				EFA40A851B82036E009AB36F /* CCTile.h */,
+				EFA40A861B82036E009AB36F /* CCTile.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EFA40A8B1B82047F009AB36F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				EFA40A881B820468009AB36F /* CCFactory.h */,
+				EFA40A891B820468009AB36F /* CCFactory.m */,
+			);
+			name = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFA40A671B81E020009AB36F /* ViewController.m in Sources */,
+				EFA40A8A1B820468009AB36F /* CCFactory.m in Sources */,
 				EFA40A641B81E020009AB36F /* AppDelegate.m in Sources */,
 				EFA40A611B81E020009AB36F /* main.m in Sources */,
+				EFA40A871B82036E009AB36F /* CCTile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

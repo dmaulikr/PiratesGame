@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "CCFactory.h"
+#import "CCTile.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    CCFactory *factory = [[CCFactory alloc] init];
+    self.tiles = [factory tiles];
+    self.currentPoint = CGPointMake(0,0);
+    [self updateTile];
+    
+}
+
+-(void)updateTile
+
+{
+    
+    CCTile *tileModel = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
+    
+    self.storyLabel.text = tileModel.story;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +40,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)actionButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)northButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)westButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)eastButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)southButtonPressed:(UIButton *)sender {
+}
 @end
