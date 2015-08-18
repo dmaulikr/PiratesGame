@@ -28,6 +28,10 @@
 		EFA40AA21B821AC4009AB36F /* PirateTreasure.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFA40A961B821AC4009AB36F /* PirateTreasure.jpeg */; };
 		EFA40AA31B821AC4009AB36F /* PirateTreasurer2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFA40A971B821AC4009AB36F /* PirateTreasurer2.jpeg */; };
 		EFA40AA41B821AC4009AB36F /* PirateWeapons.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EFA40A981B821AC4009AB36F /* PirateWeapons.jpeg */; };
+		EFA40AA71B83676F009AB36F /* CCWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA40AA61B83676F009AB36F /* CCWeapon.m */; };
+		EFA40AAA1B8367B4009AB36F /* CCArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA40AA91B8367B4009AB36F /* CCArmor.m */; };
+		EFA40AAD1B8368EA009AB36F /* CCCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA40AAC1B8368EA009AB36F /* CCCharacter.m */; };
+		EFA40AB01B837C38009AB36F /* CCBoss.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA40AAF1B837C38009AB36F /* CCBoss.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,14 @@
 		EFA40A961B821AC4009AB36F /* PirateTreasure.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateTreasure.jpeg; sourceTree = "<group>"; };
 		EFA40A971B821AC4009AB36F /* PirateTreasurer2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateTreasurer2.jpeg; sourceTree = "<group>"; };
 		EFA40A981B821AC4009AB36F /* PirateWeapons.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateWeapons.jpeg; sourceTree = "<group>"; };
+		EFA40AA51B83676F009AB36F /* CCWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWeapon.h; sourceTree = "<group>"; };
+		EFA40AA61B83676F009AB36F /* CCWeapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCWeapon.m; sourceTree = "<group>"; };
+		EFA40AA81B8367B4009AB36F /* CCArmor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCArmor.h; sourceTree = "<group>"; };
+		EFA40AA91B8367B4009AB36F /* CCArmor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCArmor.m; sourceTree = "<group>"; };
+		EFA40AAB1B8368EA009AB36F /* CCCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCharacter.h; sourceTree = "<group>"; };
+		EFA40AAC1B8368EA009AB36F /* CCCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCharacter.m; sourceTree = "<group>"; };
+		EFA40AAE1B837C38009AB36F /* CCBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBoss.h; sourceTree = "<group>"; };
+		EFA40AAF1B837C38009AB36F /* CCBoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBoss.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +169,14 @@
 				EFA40A8B1B82047F009AB36F /* Factory */,
 				EFA40A851B82036E009AB36F /* CCTile.h */,
 				EFA40A861B82036E009AB36F /* CCTile.m */,
+				EFA40AA81B8367B4009AB36F /* CCArmor.h */,
+				EFA40AA91B8367B4009AB36F /* CCArmor.m */,
+				EFA40AAB1B8368EA009AB36F /* CCCharacter.h */,
+				EFA40AAC1B8368EA009AB36F /* CCCharacter.m */,
+				EFA40AA51B83676F009AB36F /* CCWeapon.h */,
+				EFA40AA61B83676F009AB36F /* CCWeapon.m */,
+				EFA40AAE1B837C38009AB36F /* CCBoss.h */,
+				EFA40AAF1B837C38009AB36F /* CCBoss.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -304,8 +324,12 @@
 				EFA40A671B81E020009AB36F /* ViewController.m in Sources */,
 				EFA40A8A1B820468009AB36F /* CCFactory.m in Sources */,
 				EFA40A641B81E020009AB36F /* AppDelegate.m in Sources */,
+				EFA40AAD1B8368EA009AB36F /* CCCharacter.m in Sources */,
 				EFA40A611B81E020009AB36F /* main.m in Sources */,
 				EFA40A871B82036E009AB36F /* CCTile.m in Sources */,
+				EFA40AAA1B8367B4009AB36F /* CCArmor.m in Sources */,
+				EFA40AA71B83676F009AB36F /* CCWeapon.m in Sources */,
+				EFA40AB01B837C38009AB36F /* CCBoss.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
